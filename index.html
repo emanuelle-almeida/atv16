@@ -1,11 +1,222 @@
+```html
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excursão</title>
+
+    <title>DOM - Document Object Model</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Excursão</h1>
+
+    <header id="cabecalho">
+
+        <h1>Fundação de Ensino de Contagem</h1>
+
+        <p>Curso de Frontend</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h2>Manipulação do DOM</h2>
+
+        <p id="paragrafo">
+            Este é um parágrafo que será utilizado nos exercícios.
+        </p>
+
+        <p class="destaque">
+            Este é um texto com a classe destaque.
+        </p>
+
+
+        <!-- CAIXAS -->
+
+        <section class="caixas">
+
+            <div class="caixa">
+                <h3>Caixa 1</h3>
+                <p>Conteúdo da 1ª caixa.</p>
+            </div>
+
+            <div class="caixa">
+                <h3>Caixa 2</h3>
+                <p>Conteúdo da 2ª caixa.</p>
+            </div>
+
+            <div class="caixa">
+                <h3>Caixa 3</h3>
+                <p>Conteúdo da 3ª caixa.</p>
+            </div>
+
+        </section>
+
+
+        <!-- BOTÕES -->
+
+        <section>
+
+            <button id="botaoPrincipal" class="botao principal">
+                Botão principal
+            </button>
+
+            <button class="botao secundario">
+                Botão secundário
+            </button>
+
+        </section>
+
+
+        <!-- TECNOLOGIAS -->
+
+        <section>
+
+            <h2>Lista de tecnologias</h2>
+
+            <ul id="listaTecnologias">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Rust</li>
+            </ul>
+
+        </section>
+
+
+        <!-- IMAGEM -->
+
+        <section>
+
+            <h2>Imagem</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400"
+                alt="Computador utilizado para programação"
+                class="imagem"
+            >
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+
+        <section>
+
+            <h2>Formulário</h2>
+
+            <form id="formulario">
+
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                >
+
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                >
+
+                <label for="curso">Curso</label>
+
+                <select id="curso">
+
+                    <option value="">Selecione</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+
+                </select>
+
+
+                <label for="comentario">Comentário</label>
+
+                <textarea
+                    id="comentario"
+                    rows="5"
+                    placeholder="Digite seu comentário"
+                ></textarea>
+
+
+                <button type="submit" class="botao principal">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- TABELA -->
+
+        <section>
+
+            <h2>Tabela de alunos</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelaAlunos">
+
+                    <tr>
+                        <td>Ana</td>
+                        <td>18</td>
+                        <td>HTML</td>
+                    </tr>
+
+                    <tr>
+                        <td>João</td>
+                        <td>20</td>
+                        <td>CSS</td>
+                    </tr>
+
+                    <tr>
+                        <td>Maria</td>
+                        <td>19</td>
+                        <td>JavaScript</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <p id="rodapeTexto">
+            Curso de Frontend - Manipulação do DOM
+        </p>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
+```
