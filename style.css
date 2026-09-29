@@ -1,0 +1,187 @@
+```css
+/* Configuração geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+    color: #b30000;
+
+    transition: 0.3s;
+}
+
+
+/* Classe usada pelo JavaScript */
+
+body.vermelho {
+    background-color: #b30000;
+    color: white;
+}
+
+
+/* Cabeçalho */
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #b30000;
+}
+
+
+/* Menu */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #b30000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.vermelho nav a {
+    color: white;
+}
+
+
+/* Conteúdo */
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+
+/* Destaque */
+
+.destaque {
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #b30000;
+}
+
+
+/* Caixas */
+
+.caixas {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.caixa {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #b30000;
+    border-radius: 10px;
+}
+
+
+/* Botões */
+
+.botao {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #b30000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.principal {
+    background-color: #b30000;
+    color: white;
+}
+
+.secundario {
+    background-color: white;
+    color: #b30000;
+}
+
+body.vermelho .secundario {
+    background-color: #b30000;
+    color: white;
+}
+
+
+/* Imagem */
+
+.imagem {
+    width: 250px;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* Formulário */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 2px solid #b30000;
+    border-radius: 5px;
+}
+
+
+/* Tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 2px solid #b30000;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #b30000;
+    color: white;
+}
+
+
+/* Quando o fundo estiver vermelho */
+
+body.vermelho .destaque {
+    border-color: white;
+}
+
+body.vermelho input,
+body.vermelho select,
+body.vermelho textarea,
+body.vermelho .caixa {
+    border-color: white;
+}
+
+body.vermelho table th,
+body.vermelho table td {
+    border-color: white;
+}
+```
